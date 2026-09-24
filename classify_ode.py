@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 """
 classify_ode.py  --  classify an autonomous first-order ODE   u' = g(u)
+
 (g a rational function with numeric coefficients) following
 
   P. Kumbhakar, "New and general type meromorphic 1-forms on curves",
   Comm. Algebra 54 (2026), and Noordman-van der Put-Top (2022).
+
+NOTE: this is the lightweight Python fallback. The main program is
+classify_ode.sage (SageMath), which works with exact algebraic numbers and also
+uses the faster residue criterion described in the README. Use the Sage
+version for definitive results.
 
 The associated pair is (P^1, omega) with omega = dx / g(x).
 
